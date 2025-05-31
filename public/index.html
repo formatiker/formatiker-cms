@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formatiker</title>
+    <link rel="stylesheet" href="dist/style.min.css" />
+    <link rel="stylesheet" href="dist/sal.css" />
+</head>
+<body>
+    <header>
+        <div class="header__area header-box-plr-5-245 header__padding-5 header__style-5 header__sticky header-sticky-blur header-sticky" id="header-sticky">
+            <div class="header__top-5 mb-2">
+            <div class="mega-menu-wrapper p-relative">
+                <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-6 my-2">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img loading="lazy" class="w-100" src="dist/assets/img/logo/logo-black.svg" alt="logo" />
+                        </a>
+                    </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-8 col-md-6 col-6 d-flex justify-content-end">
+                        <div class="main-menu main-menu-ff-space d-none d-xl-block">
+                            <nav class="main-nav">
+                                <ul class="d-flex justify-content-end">
+                                    <li class="selected">
+                                        <a href="index.html"><b>Home</b></a>
+                                    </li>
+                                    <li class="">
+                                        <a href="web.html"><b>Web-Entwicklung</b></a>
+                                    </li>
+                                    <li class="">
+                                        <a href="pc.html"><b>PC-Montage</b></a>
+                                    </li>
+                                    <li class="">
+                                        <a href="learn.html"><b>Lernhilfe</b></a>
+                                    </li>
+                                    <li class="">
+                                        <a href="ueber_mich.html"><b>Über mich</b></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                                            <div class="header__right-5 d-flex align-items-center justify-content-end">
+                        <div class="header__btn-5 d-none d-xl-block ml-40 my-2">
+                            <a href="kontakt.html"  class="tp-btn-black rounded-2 to-contact">Kontakt</a>
+                        </div>
+                        <div class="header__hamburger header__hamburger-5 ml-50 d-xl-none">
+                            <button type="button" class="hamburger-btn hamburger-btn-blue hamburger-btn-black offcanvas-open-btn" id="sidebarToggle">
+                                <span></span><span></span><span></span>
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+    <div class="offcanvas__area offcanvas__area-5">
+        <div class="offcanvas__wrapper offcanvas__wrapper-5">
+            <div class="offcanvas__close">
+                <button class="offcanvas__close-btn offcanvas__close-btn-5 offcanvas-close-btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="offcanvas__content">
+                <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
+                    <div class="offcanvas__logo logo">
+                        <a aria-current="page" href="index.html" class="router-link-active router-link-exact-active">
+                            <img loading="lazy" class="w-75" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB3aWR0aD0iMTQwLjY3MzQzbW0iCiAgIGhlaWdodD0iMzAuMDQzMDgzbW0iCiAgIHZpZXdCb3g9IjAgMCAxNDAuNjczNDMgMzAuMDQzMDgzIgogICB2ZXJzaW9uPSIxLjEiCiAgIGlkPSJzdmcxIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnMxIj4KICAgIDxyZWN0CiAgICAgICB4PSI5Ny40NDQyNiIKICAgICAgIHk9IjM2My4wMjc2NSIKICAgICAgIHdpZHRoPSI2MzkuMTE5NjkiCiAgICAgICBoZWlnaHQ9IjI3Mi4yNzA3MiIKICAgICAgIGlkPSJyZWN0MSIgLz4KICA8L2RlZnM+CiAgPGcKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yNS42NTY2OTMsLTkxLjkwOTg0NCkiPgogICAgPHRleHQKICAgICAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgICAgICB0cmFuc2Zvcm09InNjYWxlKDAuMjY0NTgzMzMpIgogICAgICAgaWQ9InRleHQxIgogICAgICAgc3R5bGU9ImZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjk2cHg7Zm9udC1mYW1pbHk6Um9ib3RvOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246J1JvYm90byBCb2xkJzt0ZXh0LWFsaWduOnN0YXJ0O3dyaXRpbmctbW9kZTpsci10YjtkaXJlY3Rpb246bHRyO3doaXRlLXNwYWNlOnByZTtzaGFwZS1pbnNpZGU6dXJsKCNyZWN0MSk7ZmlsbDojYWFmZmNjO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxLjEzMzg2Ij48dHNwYW4KICAgICAgICAgeD0iOTcuNDQzMzU5IgogICAgICAgICB5PSI0NDcuMDI3MzQiCiAgICAgICAgIGlkPSJ0c3BhbjMiPjx0c3BhbgogICAgICAgICAgIHN0eWxlPSJmb250LXN0eWxlOml0YWxpYztmb250LXdlaWdodDo5MDA7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjonUm9ib3RvIEhlYXZ5IEl0YWxpYyc7ZmlsbDojMDAwMDAwIgogICAgICAgICAgIGlkPSJ0c3BhbjIiPkZvcm1hdGlrZXI8L3RzcGFuPjwvdHNwYW4+PC90ZXh0PgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjAuMyIKICAgICAgIGQ9Im0gMTI4LjkwNjc2LDkyLjI1OTU2OCBjIDY2LjczMDIxLC0zLjAzMzE5IDIzLjUwNzI0LDI5LjU3MzYxMiAyMy41MDcyNCwyOS41NzM2MTIgMCwwIDI1LjAyMzgzLC0yNi4yODc2NTIgLTIzLjUwNzI0LC0yOS41NzM2MTIgeiIKICAgICAgIGlkPSJwYXRoMiIgLz4KICA8L2c+Cjwvc3ZnPgo=" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="mobile-menu fix mb-40 menu-counter mean-container">
+                    <div class="mean-bar">
+                        <nav class="mean-nav">
+                            <ul>
+                                <li>
+                                    <a class="selected" href="index.html"><b>Home</b></a>
+                                </li>
+                                <li>
+                                    <a class="" href="web.html"><b>Web-Entwicklung</b></a>
+                                </li>
+                                <li>
+                                    <a class="" href="pc.html"><b>PC-Montage</b></a>
+                                </li>
+                                <li>
+                                    <a class="" href="learn.html"><b>Lernhilfe</b></a>
+                                </li>
+                                <li>
+                                    <a class="" href="ueber_mich.html"><b>Über mich</b></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="offcanvas__btn-5 mb-60">
+                    <a href="kontakt.html"  class="tp-btn-black rounded-2 w-100 to-contact d-flex justify-content-center">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-overlay">
+    </div>
+    <main>
+        <div class="swiper mySwiper w-100 slider__height-5 position-absolute">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide w-100 h-100 d-flex justify-content-center slider__height-5" :key="0">
+                    <div class="slider__shape image1 w-100 h-100 position-absolute"></div>
+                </div>
+                <div class="swiper-slide w-100 h-100 d-flex justify-content-center slider__height-5" :key="1">
+                    <div class="slider__shape image2 w-100 h-100 position-absolute"></div>
+                </div>
+                <div class="swiper-slide w-100 h-100 d-flex justify-content-center slider__height-5" :key="2">
+                    <div class="slider__shape image3 w-100 h-100 position-absolute"></div>
+                </div>
+            </div>
+        </div>
+        <section class="slider__area box-plr-5-245 slider__height-6 d-flex align-items-center p-relative z-index-1 fix flex-column justify-content-end">
+            <div class="container-fluid position-relative z-index-1">
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 mb-sm-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="text__container__right p-3 slider__content-5 rounded-4">
+                                    <h4 class="d-block mb-0">Dein Technik-Profi aus Brugg</h4>
+                                    <h1 class="d-none d-lg-block font__white mb-2">Preiswert, Authentisch</h1>
+                                    <h1 class="d-none d-lg-block font__white mb-2">& Unkompliziert!</h1>
+                                    <h3 class="d-block d-lg-none font__white mb-0">Preiswert, Authentisch</h3>
+                                    <h3 class="d-block d-lg-none font__white mb-0">& Unkompliziert!</h3>
+                                    <a href="tel:+41763388953">
+                                        <h3 class="d-none d-lg-block">076 338 89 53</h3>
+                                        <h4 class="d-block d-lg-none">076 338 89 53</h4>
+                                    </a>
+                                    <a href="email:info@formatiker.com">
+                                        <h3 class="d-none d-lg-block">info@formatiker.com</h3>
+                                        <h4 class="d-block d-lg-none">info@formatiker.com</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6"></div>
+                </div>
+            </div>
+        </section>
+        <section class="services__area p-relative z-index-1 pt-20">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-8 col-xl-8 col-lg-10"></div>
+                </div>
+                <div class="row">
+                    <a href="web.html" class="col-xxl-4 col-xl-4 col-lg-4 col-md-6" data-bs-toggle="modal" data-bs-target="">
+                        <div class="services__item-5 mb-30 bright-bg wow fadeInUp" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
+                            <div class="services__item-5-inner text-center transition-3 bright-bg">
+                                <div class="services__content-5">
+                                    <h3 class="services__title-5">Web-Entwicklung</h3>
+                                    <p>Egal ob Web-Shops, Web-Auftritt oder eine Web-Applikation. </p>
+                                </div>
+                                <div class="services__thumb-5">
+                                    <img loading="lazy" src="dist/assets/img/services/5/services-1.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="pc.html"  class="col-xxl-4 col-xl-4 col-lg-4 col-md-6" data-bs-toggle="modal" data-bs-target="">
+                        <div class="services__item-5 mb-30 bright-bg wow fadeInUp" data-sal="slide-up" data-sal-delay="150" data-sal-duration="1000">
+                            <div class="services__item-5-inner text-center transition-3 bright-bg">
+                                <div class="services__content-5">
+                                    <h3 class="services__title-5">PC Montage</h3>
+                                    <p>Ich berate Sie und kümmere mich um alles, von der Bestellung bis zum Zusammenbau.</p>
+                                </div>
+                                <div class="services__thumb-5">
+                                    <img loading="lazy" src="dist/assets/img/services/5/services-2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="learn.html"  class="col-xxl-4 col-xl-4 col-lg-4 col-md-6" data-bs-toggle="modal" data-bs-target="">
+                        <div class="services__item-5 mb-30 bright-bg wow fadeInUp" data-sal="slide-up" data-sal-delay="170" data-sal-duration="1000">
+                            <div class="services__item-5-inner text-center transition-3 bright-bg">
+                                <div class="services__content-5">
+                                    <h3 class="services__title-5">Lernhilfe Informatik</h3>
+                                    <p>Einzelhilfe für Schüler:innen & Lernende in ICT-Ausbildungen – verständlich & praxisnah</p>
+                                </div>
+                                <div class="services__thumb-5">
+                                    <img loading="lazy" src="dist/assets/img/services/5/services-3.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="pb-50 d-none d-xl-block"></div>
+        </section>
+        <div class="d-none product__modal modal fade" id="productModalList-1" tabindex="-1" aria-labelledby="productModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="product__modal-wrapper">
+                        <div class="product__modal-close">
+                            <button class="product__modal-close-btn" type="button" data-bs-toggle="modal" data-bs-target="#productModalList-1">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                        <path d="M21 1L1 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M1 1L21 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-12">
+                                <h3 class="pb-3">Web-Entwicklung</h3>
+                                <p class="pb-3">Ich entwickle moderne, schnelle und durchdacht strukturierte Webseiten – von der schlanken Landingpage bis hin zur dynamischen Webapplikation. Als ausgebildeter Applikationsentwickler biete ich effiziente Lösungen, die sowohl optisch als auch technisch überzeugen.</p>
+                                <ul>
+                                    <li><strong>Responsive Design:</strong> Optimale Darstellung auf Desktop, Tablet &amp; Smartphone</li>
+                                    <li><strong>Schnelle Ladezeiten:</strong> Technisch sauberer Code und performante Umsetzung</li>
+                                    <li><strong>Datenschutzkonform:</strong> DSGVO-Berücksichtigung &amp; Cookie-Handling auf Wunsch</li>
+                                    <li><strong>Individuell &amp; modular:</strong> Keine Templates, sondern maßgeschneiderte Lösungen</li>
+                                    <li><strong>CMS &amp; Headless:</strong> WordPress, Nuxt, Sanity, oder Backend-Anbindung je nach Bedarf</li>
+                                    <li><strong>Moderne Webtechnologien:</strong> Entwicklung mit Vue/Nuxt, Tailwind, REST- oder GraphQL-Anbindung</li>
+                                    <li><strong>Komponentenbasiert &amp; wartbar:</strong> Klare Struktur, sauberes CSS, skalierbare Architektur</li>
+                                    <li><strong>Backend-Anbindung oder Headless-CMS:</strong> Integration mit bestehenden Systemen oder schlanken Admin-Lösungen</li>
+                                    <li><strong>Interaktive Webapplikationen:</strong> Benutzeroberflächen mit dynamischen Funktionen &amp; Zuständen</li>
+                                    <li><strong>Technisch fundiert:</strong> Ausgebildeter Applikationsentwickler EFZ mit Fokus auf Effizienz &amp; Klarheit</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-12">
+                                <div class="product__modal-images mt-4">
+                                    <div class="mb-3 w-100" style="aspect-ratio: 16 / 9; overflow: hidden; border-radius: 12px;">
+                                        <img loading="lazy" src="dist/assets/img/image2.webp" alt="Bild 1" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-none product__modal modal fade" id="productModalList-2" tabindex="-1" aria-labelledby="productModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="product__modal-wrapper">
+                        <div class="product__modal-close">
+                            <button class="product__modal-close-btn" type="button" data-bs-toggle="modal" data-bs-target="#productModalList-2">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                        <path d="M21 1L1 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M1 1L21 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-12">
+                                <h3 class="pb-3">PC-Montage</h3>
+                                <p class="pb-3">Ich baue dir den perfekten PC – exakt auf deine Bedürfnisse abgestimmt. Ob für Gaming, Office oder anspruchsvolle Kreativarbeit: Ich stelle dir die optimalen Komponenten zusammen und sorge für einen sauberen, durchdachten Aufbau mit maximaler Leistung.</p>
+                                <ul>
+                                    <li><strong>Individuelle Beratung:</strong> Komponentenwahl exakt auf Einsatzzweck und Budget abgestimmt</li>
+                                    <li><strong>Gaming-PCs:</strong> Maximale FPS, optimale Kühlung und stylishes Gehäuse</li>
+                                    <li><strong>Workstations:</strong> Leistungsstarke Systeme für Video, 3D oder Musikproduktion</li>
+                                    <li><strong>Leiser Betrieb:</strong> Silent-Builds mit hochwertigen Lüftern &amp; Gehäusedämmung</li>
+                                    <li><strong>Sauberes Kabelmanagement:</strong> Ordentliche Verkabelung für bessere Luftzirkulation &amp; Wartung</li>
+                                    <li><strong>Zukunftssicher:</strong> Upgrade-freundliche Systeme mit Erweiterungsspielraum</li>
+                                    <li><strong>Schneller Aufbau:</strong> Fertiger PC in kurzer Zeit bereit zur Nutzung</li>
+                                    <li><strong>Software &amp; Einrichtung:</strong> Windows, Treiber, BIOS – alles fix &amp; ready</li>
+                                    <li><strong>Transparente Kosten:</strong> Keine versteckten Aufpreise, faire Beratung</li>
+                                    <li><strong>Optional mit Lieferung:</strong> Auf Wunsch fixfertig aufgebaut &amp; direkt geliefert</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-12">
+                                <div class="product__modal-images mt-4 row">
+                                    <div class="mb-3 col-12 col-lg-6" style="aspect-ratio: 16 / 9; overflow: hidden; border-radius: 12px;">
+                                        <img loading="lazy" src="dist/assets/img/services/image_pcbau.webp" alt="Bild 1" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+                                    </div>
+                                    <div class="mb-3 col-12 col-lg-6" style="aspect-ratio: 16 / 9; overflow: hidden; border-radius: 12px;">
+                                        <img loading="lazy" src="dist/assets/img/services/image_pcbau1.webp" alt="Bild 2" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+                                    </div>
+                                    <div class="mb-3 col-12 col-lg-6" style="aspect-ratio: 16 / 9; overflow: hidden; border-radius: 12px;">
+                                        <img loading="lazy" src="dist/assets/img/services/image_pcbau2.webp" alt="Bild 3" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-none product__modal modal fade" id="productModalList-3" tabindex="-1" aria-labelledby="productModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="product__modal-wrapper">
+                        <div class="product__modal-close">
+                            <button class="product__modal-close-btn" type="button" data-bs-toggle="modal" data-bs-target="#productModalList-3">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                        <path d="M21 1L1 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M1 1L21 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-12">
+                                <h3 class="pb-3">Mobile Apps</h3>
+                                <p class="pb-3">Ich entwickle moderne und performante Mobile Apps – für iOS und Android. Ob Produktivitäts-App, Social-Tool oder interaktive Anwendung: Du bekommst eine durchdachte Lösung mit professionellem Code, schöner UI und sinnvollem Funktionsumfang.</p>
+                                <ul>
+                                    <li><strong>Cross-Platform mit React Native:</strong> Eine Codebasis für Android &amp; iOS – spart Zeit und Kosten</li>
+                                    <li><strong>Schlank &amp; schnell:</strong> Optimierter Code für kurze Ladezeiten und flüssige Animationen</li>
+                                    <li><strong>State-Management:</strong> Zuverlässige Datenflüsse mit Redux, Zustand oder Context</li>
+                                    <li><strong>Offline-Funktionalität:</strong> Wichtige Funktionen auch ohne Internet verfügbar</li>
+                                    <li><strong>Firebase &amp; Backend-Anbindung:</strong> Login, Cloud-Speicher, Echtzeitdaten und Push-Mitteilungen</li>
+                                    <li><strong>Moderne UI-Komponenten:</strong> Schöne und einheitliche Benutzeroberfläche auf allen Geräten</li>
+                                    <li><strong>Dark Mode &amp; Responsiveness:</strong> Anpassung an Nutzungsgewohnheiten und Gerätegröße</li>
+                                    <li><strong>Formulare &amp; Validierungen:</strong> Saubere Eingabemasken mit Fehlerprüfung</li>
+                                    <li><strong>App-Store-Ready:</strong> Technisch bereit für Google Play &amp; Apple App Store</li>
+                                    <li><strong>Transparente Entwicklung:</strong> Du bist jederzeit im Loop – mit Vorschau und Feedback-Möglichkeiten</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-12">
+                                <div class="product__modal-images mt-4"><div class="mb-3 w-100" style="aspect-ratio: 16 / 9; overflow: hidden; border-radius: 12px;">
+                                    <img loading="lazy" src="dist/assets/img/image3.webp" alt="Bild 1" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <section class="about__area pt-50 pb-25 pt-xl-120 pb-xl-95 p-relative z-index-1">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xxl-3 col-lg-2 col-1"></div>
+                    <div class="col-xxl-6 col-lg-8 col-10">
+                        <div class="about__wrapper-5 mb-10" data-sal="slide-up" data-sal-delay="150" data-sal-duration="1000">
+                            <div class="mb-35">
+                                <span class="section__title-pre-5 w-100 text-center">INFORMATIKER & DIGITALER HANDWERKER</span>
+                                <h3 class="section__title-5 w-100 text-center">Seit 20 Jahren mit Leidenschaft dabei.</h3>
+                            </div>
+                            <p class="w-100 text-center mb-2 mb-lg-5">Schon als Jugendlicher habe ich PCs zusammengebaut und Webseiten programmiert – heute kombiniere ich Design und Code in einer Person.
+Effizient, individuell und technisch sauber.</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-2 col-1"></div>
+                </div>
+            </div>
+        </section>
+        <section class="cta__area p-relative z-index-1">
+            <div class="cta__overlay-5 bright-bg"></div>
+            <div class="container">
+                <div class="cta__inner-5">
+                    <div class="d-flex justify-content-center w-100 h-100 position-relative align-items-center rounded-5">
+                        <div class="position-absolute" id="cta_shape_1"></div>
+                        <div class="position-absolute" id="cta_shape_2"></div>
+                        <div class="position-absolute" id="cta_shape_3"></div>
+                        <div class="position-absolute" id="cta_shape_4"></div>
+                        <div class="position-absolute" id="cta_shape_5"></div>
+                        <div class="position-absolute" id="cta_shape_6"></div>
+                    </div>
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-xxl-10 col-xl-10 col-lg-10">
+                            <div class="cta__content-5 position-relative z-index-1">
+                                <span>Kontaktieren Sie mich ganz ungegniert</span>
+                                <h3 class="cta__title-5"> Lassen Sie uns über Ihr Vorhaben / Projekt reden. </h3>
+                            </div>
+                        </div>
+                       <div class="col-xxl-2 col-xl-2 col-lg-2 col-8">
+                            <div class="cta__btn-5 text-center d-flex justify-content-center position-relative z-index-1">
+                                <a href="kontakt.html" class="tp-btn-black rounded-2 to-contact-2 w-100">Kontakt</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pb-3 pb-lg-5"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__area dark-bg">
+            <div class="footer__top footer__top-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6">
+                            <div class="footer__widget footer__widget-5 mb-50 footer-col-5-1">
+                                <div class="footer__logo">
+                                    <a aria-current="page" href="index.html" class="router-link-active router-link-exact-active">
+                                        <img loading="lazy" class="w-100 header__area logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB3aWR0aD0iMTQwLjY3MzQzbW0iCiAgIGhlaWdodD0iMzAuMDQzMDgzbW0iCiAgIHZpZXdCb3g9IjAgMCAxNDAuNjczNDMgMzAuMDQzMDgzIgogICB2ZXJzaW9uPSIxLjEiCiAgIGlkPSJzdmcxIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnMxIj4KICAgIDxyZWN0CiAgICAgICB4PSI5Ny40NDQyNiIKICAgICAgIHk9IjM2My4wMjc2NSIKICAgICAgIHdpZHRoPSI2MzkuMTE5NjkiCiAgICAgICBoZWlnaHQ9IjI3Mi4yNzA3MiIKICAgICAgIGlkPSJyZWN0MSIgLz4KICA8L2RlZnM+CiAgPGcKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yNS42NTY2OTMsLTkxLjkwOTg0NCkiPgogICAgPHRleHQKICAgICAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgICAgICB0cmFuc2Zvcm09InNjYWxlKDAuMjY0NTgzMzMpIgogICAgICAgaWQ9InRleHQxIgogICAgICAgc3R5bGU9ImZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjk2cHg7Zm9udC1mYW1pbHk6Um9ib3RvOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246J1JvYm90byBCb2xkJzt0ZXh0LWFsaWduOnN0YXJ0O3dyaXRpbmctbW9kZTpsci10YjtkaXJlY3Rpb246bHRyO3doaXRlLXNwYWNlOnByZTtzaGFwZS1pbnNpZGU6dXJsKCNyZWN0MSk7ZGlzcGxheTppbmxpbmU7ZmlsbDojZmZmZmZmO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDoxLjEzMzg2O2ZpbGwtb3BhY2l0eToxO3N0cm9rZS1vcGFjaXR5OjEiPjx0c3BhbgogICAgICAgICB4PSI5Ny40NDMzNTkiCiAgICAgICAgIHk9IjQ0Ny4wMjczNCIKICAgICAgICAgaWQ9InRzcGFuMyI+PHRzcGFuCiAgICAgICAgICAgc3R5bGU9ImZvbnQtc3R5bGU6aXRhbGljO2ZvbnQtd2VpZ2h0OjkwMDstaW5rc2NhcGUtZm9udC1zcGVjaWZpY2F0aW9uOidSb2JvdG8gSGVhdnkgSXRhbGljJyIKICAgICAgICAgICBpZD0idHNwYW4yIj5Gb3JtYXRpa2VyPC90c3Bhbj48L3RzcGFuPjwvdGV4dD4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDowLjM7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTI4LjkwNjc2LDkyLjI1OTU2OCBjIDY2LjczMDIxLC0zLjAzMzE5IDIzLjUwNzI0LDI5LjU3MzYxMiAyMy41MDcyNCwyOS41NzM2MTIgMCwwIDI1LjAyMzgzLC0yNi4yODc2NTIgLTIzLjUwNzI0LC0yOS41NzM2MTIgeiIKICAgICAgIGlkPSJwYXRoMiIgLz4KICA8L2c+Cjwvc3ZnPgo=" alt="logo">
+                                    </a>
+                                </div>
+                                <div class="footer__widget-content">
+                                    <div class="footer__info">
+                                        <p>Ich kann Ihnen ganz persönlich und mit offener Kommunikation bestimmt weiterhelfen.</p>
+                                        <div class="footer__opening d-flex align-items-start">
+                                            <div class="footer__opening-icon mr-15">
+                                                <span>
+                                                    <svg width="37" height="34" viewBox="0 0 37 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M33.7646 9.18399L28.5562 30.095C28.1853 31.6559 26.7944 32.7378 25.187 32.7378H4.87881C2.54507 32.7378 0.875929 30.4503 1.57141 28.2093L8.07806 7.31396C8.52626 5.86117 9.87088 4.85645 11.3855 4.85645H30.3954C31.8637 4.85645 33.0846 5.75286 33.5947 6.98928C33.8883 7.65385 33.9501 8.41122 33.7646 9.18399Z" stroke="white" stroke-width="2" stroke-miterlimit="10"></path>
+                                                        <path d="M24.6006 32.7372H31.9882C33.9819 32.7372 35.5429 31.0525 35.4038 29.0588L33.8737 8.00879" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M14.832 8.59748L16.4394 1.9209" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M25.1865 8.61182L26.6393 1.9043" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M11.7715 17.2822H24.1357" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M10.2266 23.4639H22.5908" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="footer__opening-content">
+                                                <h4>Erreichbar:</h4>
+                                                <p>Mon – Sa 8:00 – 17:30 <br>Sonntag – Geschlossen</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-7 col-md-6"></div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                            <div class="footer__widget footer__widget-5 mb-50 footer-col-5-3">
+                                <h3 class="footer__widget-title">Kontakt:</h3>
+                                <div class="footer__widget-content">
+                                    <div class="footer__info">
+                                        <div class="footer__info-item d-flex align-items-start">
+                                            <div class="footer__info-icon mr-20">
+                                                <span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.979 12.431C14.979 12.683 14.923 12.942 14.804 13.194C14.685 13.446 14.531 13.684 14.328 13.908C13.985 14.286 13.607 14.559 13.18 14.734C12.76 14.909 12.305 15 11.815 15C11.101 15 10.338 14.832 9.533 14.489C8.728 14.146 7.923 13.684 7.125 13.103C6.32 12.515 5.557 11.864 4.829 11.143C4.108 10.415 3.457 9.652 2.876 8.854C2.302 8.056 1.84 7.258 1.504 6.467C1.168 5.669 1 4.906 1 4.178C1 3.702 1.084 3.247 1.252 2.827C1.42 2.4 1.686 2.008 2.057 1.658C2.505 1.217 2.995 1 3.513 1C3.709 1 3.905 1.042 4.08 1.126C4.262 1.21 4.423 1.336 4.549 1.518L6.173 3.807C6.299 3.982 6.39 4.143 6.453 4.297C6.516 4.444 6.551 4.591 6.551 4.724C6.551 4.892 6.502 5.06 6.404 5.221C6.313 5.382 6.18 5.55 6.012 5.718L5.48 6.271C5.403 6.348 5.368 6.439 5.368 6.551C5.368 6.607 5.375 6.656 5.389 6.712C5.41 6.768 5.431 6.81 5.445 6.852C5.571 7.083 5.788 7.384 6.096 7.748C6.411 8.112 6.747 8.483 7.111 8.854C7.489 9.225 7.853 9.568 8.224 9.883C8.588 10.191 8.889 10.401 9.127 10.527C9.162 10.541 9.204 10.562 9.253 10.583C9.309 10.604 9.365 10.611 9.428 10.611C9.547 10.611 9.638 10.569 9.715 10.492L10.247 9.967C10.422 9.792 10.59 9.659 10.751 9.575C10.912 9.477 11.073 9.428 11.248 9.428C11.381 9.428 11.521 9.456 11.675 9.519C11.829 9.582 11.99 9.673 12.165 9.792L14.482 11.437C14.664 11.563 14.79 11.71 14.867 11.885C14.937 12.06 14.979 12.235 14.979 12.431Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path>
+                                                        <path d="M12.5497 5.89986C12.5497 5.47986 12.2207 4.83586 11.7307 4.31086C11.2827 3.82786 10.6877 3.44986 10.0997 3.44986" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M14.9997 5.9C14.9997 3.191 12.8087 1 10.0997 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="footer__info-text">
+                                                <h4>Anrufen:</h4>
+                                                <a href="tel:+41763388953">+41 76 338 89 53</a>
+                                            </div>
+                                        </div>
+                                        <div class="footer__info-item d-flex align-items-start">
+                                            <div class="footer__info-icon mr-20">
+                                                <span>
+                                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11.5 12.9H4.5C2.4 12.9 1 11.85 1 9.4V4.5C1 2.05 2.4 1 4.5 1H11.5C13.6 1 15 2.05 15 4.5V9.4C15 11.85 13.6 12.9 11.5 12.9Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M11.5 4.85059L9.309 6.60059C8.588 7.17459 7.405 7.17459 6.684 6.60059L4.5 4.85059" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="footer__info-text">
+                                                <h4>Email:</h4>
+                                                <a href="mailto:info@formatiker.com">info@formatiker.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="footer__copyright-5">
+                                <p>© 2025 <a aria-current="page" href="index.html" class="router-link-active router-link-exact-active">Formatiker</a> All rights reserved. </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="back-to-top-wrapper scroll-top" style="display: block;">
+        <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 6L6 1L1 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+            </svg>
+        </button>
+    </div>
+    <script src="dist/sal.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            sal({
+                threshold: 0.1,
+                once: false,
+            });
+        });
+    </script>
+    <script src="dist/script.js" defer></script>
+</body>
+</html>

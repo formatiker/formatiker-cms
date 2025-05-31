@@ -1,0 +1,479 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  18. CTA CSS START
+/*----------------------------------------*/
+
+.cta{
+    $self: &;
+    &__title{
+        &-5{
+            font-family: var(--tp-ff-space);
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 1;            
+            letter-spacing: -0.06em;
+            color: var(--tp-common-white);
+            margin-bottom: 0;
+
+            @media #{$xl}{
+                font-size: 55px;
+            }
+
+            @media #{$lg}{
+                font-size: 50px;
+            }
+
+            @media #{$sm}{
+                font-size: 40px;
+            }
+
+            @media #{$xs}{
+                font-size: 38px;
+            }
+        }
+    }
+    &__inner{
+        &-5{
+            padding: 90px 100px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            border-radius: 30px;
+            @media #{$lg}{
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+
+            @media #{$sm}{
+                padding: 50px 40px;
+            }
+
+            @media #{$xs}{
+                padding: 40px 30px;
+            }
+            background: linear-gradient(45deg, rgb(0, 26, 255) 0%, rgb(0, 68, 255) 60%, rgb(0, 238, 255) 100%);
+            overflow: hidden;
+            box-shadow: 0px 40px 50px rgba(7, 18, 133, 0.3);
+            
+            @mixin shape-base($size, $color) {
+                width: $size;
+                height: $size;
+                background-color: $color;
+                position: absolute;
+                opacity: 0.5;
+            }
+
+            #cta_shape_1 {
+                @include shape-base(40px, rgba(157, 255, 0, 0.295));
+                border-radius: 50%;
+                animation: cta-moveInParent 20s ease-in-out infinite;
+            }
+
+            #cta_shape_2 {
+                @include shape-base(90px, #00d9ff57);
+                border-radius: 50%;
+                animation: cta-moveInParent2 10s linear infinite;
+            }
+
+            #cta_shape_3 {
+                @include shape-base(40px, rgba(44, 102, 136, 0.61));
+                border-radius: 50%;
+                animation: cta-moveInParent3 10s ease-in-out infinite;
+            }
+
+            #cta_shape_4 {
+                @include shape-base(120px, rgba(0, 255, 191, 0.466));
+                border-radius: 50%;
+                animation: cta-moveInParent4 30s ease-in-out infinite;
+            }
+
+            #cta_shape_5 {
+                @include shape-base(1700px, rgba(7, 219, 247, 0.582));
+                border-radius: 50%;
+                top: 0%;
+                left: -90%;
+                animation: cta-floatY 10s linear infinite;
+            }
+
+            #cta_shape_6 {
+                @include shape-base(900px, rgba(15, 107, 211, 0.719));
+                border-radius: 50%;
+                animation: cta-floatX 3s ease-in-out infinite;
+                top: -40%;
+                left: 66%;
+            }
+        }
+
+        @keyframes cta-moveInParent {
+            0%   { left: 0%; top: 0%; }
+            50%  { left: 20%; top: 80%; }
+            100% { left: 0%; top: 0%; }
+        }
+
+        @keyframes cta-moveInParent2 {
+            0%   { left: 20%; top: 40%; }
+            50%  { left: 90%; top: 10%; }
+            100% { left: 20%; top: 40%; }
+        }
+
+        @keyframes cta-moveInParent3 {
+            0%   { left: 50%; top: 40%; }
+            50%  { left: 60%; top: 30%; }
+            100% { left: 50%; top: 40%; }
+        }
+
+        @keyframes cta-moveInParent4 {
+            0%   { left: 70%; top: 10%; }
+            50%  { left: 10%; top: 90%; }
+            100% { left: 70%; top: 10%; }
+        }
+
+        @keyframes cta-floatY {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-100px);
+            }
+        }
+
+        @keyframes cta-floatX {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(150px);
+            }
+        }
+
+    }
+    &__form{
+        padding-left: 200px;
+
+        @include rtl{
+            padding-left: 0;
+            padding-right: 200px;
+        }
+
+        @media #{$lg}{
+            padding-left: 0;
+
+            @include rtl{
+                padding-right: 0;
+            }
+        }
+
+        @media #{$md, $sm, $xs}{
+            padding-left: 0;
+            margin-top: 50px;
+
+            @include rtl{
+                padding-right: 0;
+            }
+        }
+
+        &-10{
+            & .cta-form-title{
+                font-size: 30px;
+                letter-spacing: -0.02em;
+                color: var(--tp-common-white);
+                margin-bottom: 2px;
+            }
+
+            & p{
+                font-family: var(--tp-ff-space);
+                font-size: 16px;
+                color: var(--tp-common-white);
+                margin-bottom: 25px;
+            }
+        }
+    }
+    &__input{
+        position: relative;
+        & input{
+            width: 100%;
+            height: 60px;
+            line-height: 56px;
+            border: 2px solid var(--tp-common-black);
+            font-family: var(--tp-ff-inter);
+            padding-left: 25px;
+            padding-right: 150px;
+            background-color: var(--tp-common-white);
+
+            @include rtl{
+                padding-left: 0;
+                padding-right: 0;
+                padding-left: 150px;
+                padding-right: 25px;
+                text-align: right;
+            }
+            @include tp-placeholder{
+                color: var(--tp-text-6);
+                font-size: 15px;
+                font-family: var(--tp-ff-inter);
+            }
+
+            &:focus{
+                border-color: var(--tp-theme-2);
+            }
+
+            @media #{$xs}{
+               padding-right: 25px;
+               @include rtl{
+                padding-right: 0;
+                padding-left: 25px;
+               }
+            }
+        }
+
+        & button{
+            position: absolute;
+            top: 7px;
+            right: 7px;
+            padding: 10px 30px;
+
+            @include rtl{
+                right: auto;
+                left: 7px;
+            }
+
+            @media #{$xs}{
+                position: relative;
+                right: auto;
+                left: 0;
+
+                @include rtl{
+                    left: auto;
+                    right: 0;
+                }
+            }
+
+            &:hover{
+                background-color: var(--tp-theme-2-dark);
+            }
+        }
+
+        &-10{
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+            @include rtl{
+                margin-right: 0;
+                margin-left: 20px;
+            }
+
+            @media #{$xs}{
+                margin-right: 0;
+
+                @include rtl{
+                    margin-left: 0;
+                }
+            }
+            & input{
+                height: 56px;
+                line-height: 56px;
+                width: 244px;
+                background-color: transparent;
+                border: 2px solid rgba(255, 255, 255, 0.16);
+                border-radius: 6px;
+                color: var(--tp-common-white);
+                font-family: var(--tp-ff-space);
+                font-size: 16px;
+                padding: 0 24px;
+
+                @include rtl{
+                    text-align: right;
+                }
+
+                @include tp-placeholder{
+                    color: var(--tp-common-white);
+                }
+
+
+                &:focus{
+                    border-color: var(--tp-common-white);
+                }
+
+                @media #{$xs}{
+                    width: 100%;
+                }
+            }
+
+            &.sm-input{
+                margin-right: 0;
+
+                @include rtl{
+                    margin-left: 0;
+                }
+                & input{
+                    width: 150px;
+                }
+            }
+        }
+
+        &-13{
+            position: relative;
+            & input{
+                height: 64px;
+                background: #FFFFFF;
+                border: 1px solid var(--tp-common-black);
+                font-size: 15px;
+                font-family: var(--tp-ff-roboto);
+                padding-right: 170px;
+
+                @include rtl{
+                    padding-right: 29px;
+                    padding-left: 170px;
+                    text-align: right;
+                }
+
+                @include tp-placeholder{
+                    color: #7D7F82;
+                }
+
+                &:focus{
+                    border-color: var(--tp-common-black);
+                }
+
+                @media #{$xs}{
+                    padding-right: 26px;
+
+                    @include rtl{
+                        padding-right: 0;
+                        padding-left: 26px;
+                    }
+                }
+            }
+            & .tp-btn{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-family: var(--tp-ff-roboto);
+                font-weight: 500;
+                font-size: 16px;
+                color: var(--tp-common-white);
+                background-color: var(--tp-common-black);
+                padding: 10px 42px;
+
+                @include rtl{
+                    right: auto;
+                    left: 10px;
+                }
+
+                @media #{$xs}{
+                    position: static;
+                    margin-top: 15px;
+                }
+
+                &:hover{
+                    background-color: var(--tp-theme-1);
+                    color: var(--tp-common-white);
+                }
+            }
+        }
+    }
+    &__shape{
+        /* home 5 shape css start */
+        &-7{
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            opacity: .6;
+        }
+        &-8{
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+        }
+        &-9{
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            opacity: .6;
+        }
+        &-10{
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            mix-blend-mode: overlay;
+        }
+        &-11{
+            position: absolute;
+            z-index: -1;
+            left: 3%;
+            bottom: -12px;
+            mix-blend-mode: color-dodge;
+
+        }
+        &-12{
+            position: absolute;
+            z-index: -1;
+            left: 46%;
+            top: 28%;
+            mix-blend-mode: color-dodge;
+        }
+        &-13{
+            position: absolute;
+            z-index: -1;
+            right: 33%;
+            bottom: 6%;
+            mix-blend-mode: color-dodge;
+        }
+        &-14{
+            position: absolute;
+            z-index: -1;
+            right: 23%;
+            top: -4%;
+            mix-blend-mode: color-dodge;
+        }
+        &-15{
+            position: absolute;
+            z-index: -1;
+            top: 25%;
+            right: 38%;
+            mix-blend-mode: color-burn;
+        }
+        &-16{
+            position: absolute;
+            z-index: -1;
+            top: 25%;
+            right: 38%;
+        }
+    }
+    &__content{
+        &-5{
+            & span{
+                font-family: var(--tp-ff-space);
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: var(--tp-common-white);
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__overlay{
+        &-5{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+        }
+    }
+    &__btn{
+        &-5{
+            @media #{$md, $sm, $xs}{
+                margin-top: 50px;
+            }
+        }
+    }
+}

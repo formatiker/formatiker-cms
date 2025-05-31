@@ -1,0 +1,51 @@
+$colors: (
+    'background': (
+        'dark': #000,
+        'bright': #fff, // white opacity 30%
+    ),
+    'common': (
+        'white': #ffffff,
+        'white-op-3': #ffffff4d, // white opacity 30%
+        'black-solid': #000,
+        'black': #03041C,
+        'black-2': #152E27,
+        'black-7': #12173E,
+        'black-11': #04121F,
+        'black-12': #111428,
+        'blue-dark': #1B2BD7,
+        'yellow': #FFB422,
+        'yellow-3': #FFC062,
+    ),
+    'heading': (
+        'primary': #03041C,
+    ),
+    'grey': (
+        '1':#F1F1F1,
+        '4':#F0F0F5,
+        '5':#D4D4DD,
+        '11':#EFF1F8,
+        '15': #F5F5F8,
+    ),
+    'text': (
+        'body':#525258,
+        '1':#525258,
+        '3':#B0B0B8,
+        '4':#BDBDC6,
+        '6':#5E6167,
+        '15': #81849B,
+        
+    ),
+    'theme': (
+        '1': #F50963,
+        '2': #008080,
+        '2-dark': #065454,
+        '3': #F31E5E,
+        '5': #000,
+        '7': #2CAE76,
+        '8': #FF5A1B,
+    ),
+    'border': (
+        '1': #ffffff1a, // white opacity 10%
+        '5': #EAEAEF,
+    )
+);

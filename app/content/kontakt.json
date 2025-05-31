@@ -1,0 +1,24 @@
+{
+  "globalPageName": "Formatiker",
+  "header": {
+    "title": "Kontakt",
+    "activePage": "kontakt"
+  },
+  "about": {
+    "subtitle": "Kontakt",
+    "title": "076 338 89 53",
+    "textArray": ["Egal ob du nur etwas wissen willst oder bereits konkrete Vorstellungen hast – ich melde mich schnell und persönlich bei dir zurück."]
+  },
+  "singleImage": {
+    "picture": "kontakt"
+  },
+  "footer": {
+    "logo": "../assets/img/logo/logo-white-solid.svg",
+    "info": "Ich kann Ihnen ganz persönlich...",
+    "phoneLink": "+41763388953",
+    "phoneDisplay": "076 338 89 53",
+    "emailLink": "info@formatiker.com",
+    "emailDisplay": "info@formatiker.com",
+    "openingList": ["Mon – Sa 8:00 – 17:30","Sonntag – Geschlossen"]
+  }
+}

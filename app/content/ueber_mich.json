@@ -1,0 +1,32 @@
+{
+  "globalPageName": "Formatiker",
+  "header": {
+    "title": "Über mich",
+    "activePage": "ueber_mich"
+  },
+  "aboutMe": {
+    "picture": "ueber_mich"
+  },
+  "about": {
+    "subtitle": "Über mich",
+    "title": "Technik trifft Gestaltung.",
+    "textArray": ["Ich bin ausgebildeter Applikationsentwickler (EFZ) aus Brugg. Trotz sehr guter Abschlussnoten (5.6 im Schnitt), fundierter Expertise und viel Know-how erhielt ich auf über 20 Bewerbungen ebenso viele Absagen.",
+    "Deshalb gehe ich nun meinen eigenen Weg – und biete meine Fähigkeiten direkt als Dienstleistung an: ehrlich, effizient und individuell.",
+    "Was mich besonders macht und abhebt, ich vereine Design und Programmierung in einer Person. Das spart Abstimmung, beschleunigt Prozesse – und sorgt dafür, dass Konzept, Code und Gestaltung nahtlos zusammenpassen."]
+  },
+  "cta": {
+    "subtitle": "Kontaktieren Sie mich ganz ungegniert",
+    "title": "Lassen Sie uns über Ihr Vorhaben / Projekt reden.",
+    "link": "/formatiker_php/public/kontakt",
+    "linkText": "Kontakt"
+  },
+  "footer": {
+    "logo": "../assets/img/logo/logo-white-solid.svg",
+    "info": "Ich kann Ihnen ganz persönlich...",
+    "phoneLink": "+41763388953",
+    "phoneDisplay": "076 338 89 53",
+    "emailLink": "info@formatiker.com",
+    "emailDisplay": "info@formatiker.com",
+    "openingList": ["Mon – Sa 8:00 – 17:30","Sonntag – Geschlossen"]
+  }
+}

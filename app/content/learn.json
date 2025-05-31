@@ -1,0 +1,48 @@
+{
+  "globalPageName": "Formatiker",
+  "header": {
+    "title": "Informatik Lernhilfe",
+    "activePage": "learn"
+  },
+  "about": {
+    "subtitle": "INFORMATIK-LERNHILFE & PRÜFUNGSVORBEREITUNG",
+    "title": "Ich hatte 5.8 in der IPA jetzt helfe ich dir.",
+    "textArray": ["Ich zeige dir, wie du Informatik nicht nur auswendig lernst, sondern wirklich verstehst. Egal ob LAP, Berufsschule oder erste Programmiererfahrung – ich nehme mir Zeit, erkläre verständlich und gehe auf dein Level ein."]
+  },
+  "listAndImage": {
+    "listAndImageList": [
+        ["Hervorragende Ausbildung","Abgeschlossen mit Bestnoten als Applikationsentwickler"],
+        ["Individuelle Begleitung","Persönlich abgestimmt auf dein Lerntempo und Vorwissen"],
+        ["Grundlagen verstehen","Betriebssysteme, Dateiverwaltung, Netzwerke und mehr"],
+        ["Programmieren lernen","Erste Schritte mit HTML, CSS, JavaScript oder C"],
+        ["Praktische Übungen","Keine trockene Theorie – wir machen es greifbar"],
+        ["Prüfungsvorbereitung","Gezielt lernen für LAP, Schulprüfungen oder Fachgespräche"],
+        ["Remote oder vor Ort","Unterstützung per Videochat oder persönlich im Raum Brugg"],
+        ["Geduldig & verständlich","Kein Druck – wir gehen alles in Ruhe durch"],
+        ["Technik einfach erklärt","Auch komplexe Themen werden logisch & bildlich vermittelt"],
+        ["Flexible Termine","Lernen wann es dir passt – abends oder am Wochenende möglich"],
+        ["Faire Preise","Keine Abo-Fallen – einfach buchen, wenn du Hilfe brauchst"]
+    ],
+    "listAndImageImages": ["image2","image3"]
+  },
+    "about2": {
+    "subtitle": "Verstehen statt Auswendiglernen.",
+    "title": "",
+    "textArray": ["Informatik wirkt anfangs oft kompliziert – ich zeige dir Schritt für Schritt, wie alles zusammenhängt. Du lernst nicht nur für die nächste Prüfung, sondern wirklich fürs Leben. Mit Ruhe, Struktur und echten Aha-Momenten."]
+  },
+  "cta": {
+    "subtitle": "Kontaktieren Sie mich ganz ungegniert",
+    "title": "Lassen Sie uns über Ihr Vorhaben / Projekt reden.",
+    "link": "/formatiker_php/public/kontakt",
+    "linkText": "Kontakt"
+  },
+  "footer": {
+    "logo": "../assets/img/logo/logo-white-solid.svg",
+    "info": "Ich kann Ihnen ganz persönlich...",
+    "phoneLink": "+41763388953",
+    "phoneDisplay": "076 338 89 53",
+    "emailLink": "info@formatiker.com",
+    "emailDisplay": "info@formatiker.com",
+    "openingList": ["Mon – Sa 8:00 – 17:30","Sonntag – Geschlossen"]
+  }
+}

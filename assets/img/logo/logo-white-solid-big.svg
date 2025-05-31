@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200.673mm"
+   height="30.043083mm"
+   viewBox="0 0 200.673 30.043083"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="logo-white-solid-big.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#000000"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.1360236"
+     inkscape:cx="-18.485532"
+     inkscape:cy="-23.326981"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <color-profile
+       name="Agfa-:-Swop-Standard"
+       xlink:href="../../../../../../../../../Windows/system32/spool/drivers/color/RSWOP.icm"
+       id="color-profile2" />
+    <color-profile
+       name="sRGB-IEC61966-2.1"
+       xlink:href="../../../../../../../../../Windows/system32/spool/drivers/color/sRGB%20Color%20Space%20Profile.icm"
+       id="color-profile3" />
+    <rect
+       x="97.44426"
+       y="363.02765"
+       width="639.11969"
+       height="272.27072"
+       id="rect1" />
+    <rect
+       x="97.44426"
+       y="363.02765"
+       width="639.11969"
+       height="272.27072"
+       id="rect1-4" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-25.656693,-91.909844)">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,4.6580606,0.23290303)"
+       id="text1"
+       style="font-weight:bold;font-size:96px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.13386;stroke-opacity:1"><tspan
+         x="97.443359"
+         y="447.02734"
+         id="tspan6"><tspan
+           style="font-style:italic;font-weight:900;-inkscape-font-specification:'Roboto Heavy Italic'"
+           id="tspan5">Formatiker</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,137.94787,0.58428127)"
+       id="text1-8"
+       style="font-weight:bold;font-size:96px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1-4);display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.13386;stroke-opacity:1"><tspan
+         x="97.443359"
+         y="447.02734"
+         id="tspan7">.com</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-opacity:1"
+       d="m 133.56482,92.492471 c 66.73021,-3.03319 23.50724,29.573609 23.50724,29.573609 0,0 25.02383,-26.287649 -23.50724,-29.573609 z"
+       id="path2" />
+  </g>
+</svg>

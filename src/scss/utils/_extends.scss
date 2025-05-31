@@ -1,0 +1,7 @@
+@use './mixins' as *;
+
+%tp-transition{
+	@include transition(.3s);
+}
+
+

@@ -1,0 +1,126 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  05. MEAN MENU CSS START
+/*----------------------------------------*/
+
+/* when under viewport size, .mean-container is added to body */
+.mean-container .mean-bar {
+	float: left;
+	width: 100%;
+	position: relative;
+	background: #070337;
+	padding: 4px 0;
+	min-height: 42px;
+	z-index: 999999;
+}
+
+.mean-container .mean-nav {
+	float: left;
+	width: 100%;
+	background: #070337;
+	margin-top: 44px;
+}
+
+.mean-container .mean-nav ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style-type: none;
+}
+
+.mean-container .mean-nav ul li {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.mean-container .mean-nav ul li a {
+	display: block;
+	float: left;
+	width: 90%;
+	padding: 10px 5%;
+	margin: 0;
+	text-align: left;
+	color: #fff;
+	border-top: 1px solid #e0e3ed;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.mean-nav .wrapper {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/* Fix for box sizing on Foundation Framework etc. */
+.mean-container .mean-bar, .mean-container .mean-bar * {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+
+/* mean menu customize */
+.mean-container {
+	margin-bottom: 40px;
+}
+
+.mean-container .mean-nav {
+	background: none;
+	margin-top: 0;
+}
+.mean-container .mean-bar {
+	padding: 0;
+	min-height: auto;
+	background: none;
+}
+.mean-container .mean-nav > ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style-type: none;
+	display: block !important;
+}
+
+.mean-container .mean-nav ul li{
+	position: relative;
+	float: left;
+	width: 100%;
+}
+.mean-container .mean-nav ul li a,
+.mean-container .mean-nav ul li span{
+	width: 100%;
+	padding: 10px 0;
+	color: var(--tp-common-black);
+	border-top: 1px solid #ebebeb;
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 700;
+
+	@include rtl{
+		float: right;
+		text-align: right;
+	}
+    &:hover{
+        color: var(--tp-theme-1);
+		text-shadow: 0 0 1px var(--tp-theme-1);
+		& i{
+			color: var(--tp-common-white);
+		}
+    }
+	&.selected{
+		color: var(--tp-theme-1);
+		text-shadow: 0 0 1px var(--tp-theme-1);
+	}
+}
+
+
+.mean-container .mean-nav ul li > a > i {
+    display: none;
+}
+
+.mean-container .mean-nav > ul > li:first-child > a{
+	border-top: 0;
+}

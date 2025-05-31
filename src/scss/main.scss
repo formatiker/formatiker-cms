@@ -1,0 +1,20 @@
+// Configuration
+//@forward "../../node_modules/bootstrap/scss/bootstrap";
+
+@forward 'bootstrapparts';
+@forward 'components/theme';
+@forward 'components/spacing';
+@forward 'components/buttons';
+@forward 'components/offcanvas';
+@forward 'layout/header';
+@forward 'layout/menu';
+@forward 'layout/meanmenu';
+@forward 'layout/slider';
+@forward 'layout/about';
+@forward 'layout/services';
+@forward 'layout/cta';
+@forward 'layout/contact';
+@forward 'layout/footer';
+@forward 'layout/logo';
+@forward 'layout/demo';
+

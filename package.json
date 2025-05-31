@@ -1,0 +1,17 @@
+{
+  "name": "formatiker-clean",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "sass --watch src/scss/main.scss dist/style.css",
+    "build": "sass src/scss/main.scss dist/style.min.css --style=compressed"
+  },
+  "devDependencies": {
+    "axios": "1.7.9",
+    "bootstrap": "5.3.3",
+    "sass": "1.77.6",
+    "swiper": "9.4.1"
+  },
+  "dependencies": {
+    "sal.js": "^0.8.5"
+  }
+}

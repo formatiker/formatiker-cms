@@ -1,0 +1,56 @@
+{
+  "globalPageName": "Formatiker",
+  "header": {
+    "title": "Startseite | Formatiker",
+    "activePage": "home"
+  },
+  "slider": {
+    "headline": "Dein Technik-Profi aus Brugg",
+    "textPoints": ["Preiswert, Authentisch", "& Unkompliziert!"],
+    "phoneLink": "+41763388953",
+    "phoneDisplay": "076 338 89 53",
+    "emailLink": "info@formatiker.com",
+    "emailDisplay": "info@formatiker.com",
+    "images": ["image1", "image2", "image3"]
+  },
+  "services": [
+    {
+      "href": "/formatiker_php/public/web",
+      "title": "Web-Entwicklung",
+      "desc": "Egal ob Web-Shops, Web-Auftritt oder eine Web-Applikation.",
+      "img": "../assets/img/services/5/services-1.svg"
+    },
+    {
+      "href": "/formatiker_php/public/pc",
+      "title": "PC-Montage",
+      "desc": "Individuelle Zusammenstellung & Einbau – abgestimmt auf deine Bedürfnisse.",
+      "img": "../assets/img/services/5/services-2.svg"
+    },
+    {
+      "href": "/formatiker_php/public/learn",
+      "title": "Lernhilfe",
+      "desc": "Persönliche Unterstützung für Schüler & Auszubildende – digital & verständlich.",
+      "img": "../assets/img/services/5/services-3.svg"
+    }
+  ],
+  "about": {
+    "subtitle": "INFORMATIKER & DIGITALER HANDWERKER",
+    "title": "Seit 20 Jahren mit Leidenschaft dabei.",
+    "textArray": ["Schon als Jugendlicher habe ich PCs zusammengebaut und Webseiten programmiert – heute kombiniere ich Design und Code in einer Person. Effizient, individuell und technisch sauber."]
+  },
+  "cta": {
+    "subtitle": "Kontaktieren Sie mich ganz ungegniert",
+    "title": "Lassen Sie uns über Ihr Vorhaben / Projekt reden.",
+    "link": "/formatiker_php/public/kontakt",
+    "linkText": "Kontakt"
+  },
+  "footer": {
+    "logo": "../assets/img/logo/logo-white-solid.svg",
+    "info": "Ich kann Ihnen ganz persönlich...",
+    "phoneLink": "+41763388953",
+    "phoneDisplay": "076 338 89 53",
+    "emailLink": "info@formatiker.com",
+    "emailDisplay": "info@formatiker.com",
+    "openingList": ["Mon – Sa 8:00 – 17:30","Sonntag – Geschlossen"]
+  }
+}

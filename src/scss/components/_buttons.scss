@@ -1,0 +1,143 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  ALL Button CSS START
+/*----------------------------------------*/
+
+
+/* hambur btn */
+.hamburger-btn{
+	width: 34px;
+	height: 24px;
+	position: relative;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: 0;
+
+	& span{
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		background: var(--tp-common-white);
+		height: 2px;
+		width: 25px;
+		opacity: 1;
+		z-index: 1;
+		border-radius: 10px;
+		@extend %tp-transition;
+		&:nth-child(1){
+			top: 0;
+		}
+		&:nth-child(2){
+			top: 10px;
+			width: 14px;
+			left: 50%;
+			@include transform(translateX(-50%));
+		}
+		&:nth-child(3){
+			top: 20px;
+			right: 0;
+			left: auto;
+		}
+	}
+
+	&:hover{
+		& span{
+			
+			&:nth-child(1){
+				left: 10px;
+			}
+			
+			&:nth-child(3){
+				right: 10px;				
+			}
+		}
+	}
+
+	&-black{
+		height: 15px;
+		width: 30px;
+		top: -4px;
+		& span{
+			background-color: var(--tp-common-black-2);
+
+			&:nth-child(1){
+				top: 0;
+			}
+			&:nth-child(2){
+				top: 7px;
+			}
+			&:nth-child(3){
+				top: 14px;
+			}
+		}
+
+		&:hover{
+			& span{
+				background-color: var(--tp-theme-1);
+			}
+		}
+	}
+
+	&-blue{
+		&:hover{
+			& span{
+				background-color: var(--tp-theme-5);
+			}
+		}
+	}	
+}
+
+/* theme btn */
+
+.tp-btn{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--tp-common-white);
+	background: var(--tp-theme-1);
+	box-shadow: 0 0 8px var(--tp-theme-1);
+	text-align: center;
+	font-family: var(--tp-ff-space);
+	padding: 10px 30px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	letter-spacing: -0.02em;
+
+	& i,
+	& svg{
+		margin-left: 5px;
+
+		@include rtl{
+			margin-left: 0;
+			margin-right: 5px;
+		}
+	}
+
+	& svg{
+		@include transform(translateY(-2px));
+	}
+
+	&:hover{
+		color: var(--tp-common-white);
+		background-color: var(--tp-common-purple);
+	}
+	&:focus{
+		color: var(--tp-common-white);
+	}
+
+	&-black{
+		background-color: var(--tp-common-black);
+		color: var(--tp-common-white);
+		font-size: 15px;
+		padding: 8px 29px 10px;
+		&:hover{
+			background-color: var(--tp-theme-1);
+			box-shadow: 0 0 8px var(--tp-theme-1);
+			color: var(--tp-common-white);
+		}
+	}
+
+}

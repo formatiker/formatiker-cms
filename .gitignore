@@ -1,0 +1,19 @@
+# Node (für den Fall, dass du es mal installierst)
+node_modules/
+
+# Mac/Windows System-Dateien
+.DS_Store
+Thumbs.db
+
+# Editor-Verzeichnisse
+.vscode/
+
+# Sass Cache
+.sass-cache/
+*.css.map
+
+# Temporäre Dateien
+*.log
+*.tmp
+*.bak
+*.swp

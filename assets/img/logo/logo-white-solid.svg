@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="140.67343mm"
+   height="30.043083mm"
+   viewBox="0 0 140.67343 30.043083"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="97.44426"
+       y="363.02765"
+       width="639.11969"
+       height="272.27072"
+       id="rect1" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-25.656693,-91.909844)">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text1"
+       style="font-weight:bold;font-size:96px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#ffffff;stroke:#ffffff;stroke-width:1.13386;fill-opacity:1;stroke-opacity:1"><tspan
+         x="97.443359"
+         y="447.02734"
+         id="tspan3"><tspan
+           style="font-style:italic;font-weight:900;-inkscape-font-specification:'Roboto Heavy Italic'"
+           id="tspan2">Formatiker</tspan></tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-opacity:1"
+       d="m 128.90676,92.259568 c 66.73021,-3.03319 23.50724,29.573612 23.50724,29.573612 0,0 25.02383,-26.287652 -23.50724,-29.573612 z"
+       id="path2" />
+  </g>
+</svg>
