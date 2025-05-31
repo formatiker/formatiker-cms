@@ -1,60 +1,63 @@
 {
   "globalPageName": "Formatiker",
+  "Elements":{
   "header": {
-    "title": "Web-Entwicklung",
-    "activePage": "web"
-  },
-  "about": {
-    "subtitle": "INDIVIDUELLER PC-ZUSAMMENBAU",
-    "title": "Kein Fertig-PC. Ein Rechner, der zu dir passt.",
-    "textArray": ["Ich stelle dir genau den PC zusammen, den du brauchst – ob fürs Gaming, fürs Studio oder den Alltag. Leistung, Kühlung, Kabelmanagement, Optik – alles sitzt. Transparent. Aufgeräumt. Fixfertig geliefert."]
-  },
-  "demo": {
-    "demoList": [
-        {
-        "title": "Praxis / Therapie",
-        "href": "https://html.awaikenthemes.com/spawell/index.html",
-        "image": "demo/demo-praxis.webp",
-        "alt": "Praxis Website Vorschau"
-        },
-        {
-        "title": "Coiffeur / Barber",
-        "href": "https://kamleshyadav.com/html/barber/html/bootstrap5/extension/index.html",
-        "image": "demo/demo-coiffeur.webp",
-        "alt": "Coiffeur Website Vorschau"
-        },
-        {
-        "title": "Blumenshop mit Webshop",
-        "href": "https://htmldemo.net/lukani/lukani/index.html",
-        "image": "demo/demo-blumen.webp",
-        "alt": "Blumenshop Website Vorschau"
-        },
-        {
-        "title": "Café / Bistro",
-        "href": "https://html.awaikenthemes.com/roast/book-table.html",
-        "image": "demo/demo-cafe.webp",
-        "alt": "Café Website Vorschau"
-        }
-    ]
-  },
-    "about2": {
-    "subtitle": "Was du bekommst, ist kein Standard-PC.",
-    "title": "",
-    "textArray": ["Ich baue deinen Rechner nicht einfach irgendwie zusammen – ich plane jedes Detail: Kühlung, Kabelmanagement, Aufrüstbarkeit, Lautstärke, Optik. Du bekommst ein System, das genau auf dich zugeschnitten ist – fixfertig, geprüft und bereit."]
-  },
-  "cta": {
-    "subtitle": "Kontaktieren Sie mich ganz ungegniert",
-    "title": "Lassen Sie uns über Ihr Vorhaben / Projekt reden.",
-    "link": "/formatiker_php/public/kontakt",
-    "linkText": "Kontakt"
-  },
-  "footer": {
-    "logo": "../assets/img/logo/logo-white-solid.svg",
-    "info": "Ich kann Ihnen ganz persönlich...",
-    "phoneLink": "+41763388953",
-    "phoneDisplay": "076 338 89 53",
-    "emailLink": "info@formatiker.com",
-    "emailDisplay": "info@formatiker.com",
-    "openingList": ["Mon – Sa 8:00 – 17:30","Sonntag – Geschlossen"]
+      "title": "Web-Entwicklung",
+      "activePage": "web"
+    },
+    "placeHolder":{},
+    "about": {
+      "subtitle": "INDIVIDUELLER PC-ZUSAMMENBAU",
+      "title": "Kein Fertig-PC. Ein Rechner, der zu dir passt.",
+      "textArray": ["Ich stelle dir genau den PC zusammen, den du brauchst – ob fürs Gaming, fürs Studio oder den Alltag. Leistung, Kühlung, Kabelmanagement, Optik – alles sitzt. Transparent. Aufgeräumt. Fixfertig geliefert."]
+    },
+    "demo": {
+      "list": [
+          {
+          "title": "Praxis / Therapie",
+          "href": "https://html.awaikenthemes.com/spawell/index.html",
+          "image": "demo/demo-praxis.webp",
+          "alt": "Praxis Website Vorschau"
+          },
+          {
+          "title": "Coiffeur / Barber",
+          "href": "https://kamleshyadav.com/html/barber/html/bootstrap5/extension/index.html",
+          "image": "demo/demo-coiffeur.webp",
+          "alt": "Coiffeur Website Vorschau"
+          },
+          {
+          "title": "Blumenshop mit Webshop",
+          "href": "https://htmldemo.net/lukani/lukani/index.html",
+          "image": "demo/demo-blumen.webp",
+          "alt": "Blumenshop Website Vorschau"
+          },
+          {
+          "title": "Café / Bistro",
+          "href": "https://html.awaikenthemes.com/roast/book-table.html",
+          "image": "demo/demo-cafe.webp",
+          "alt": "Café Website Vorschau"
+          }
+      ]
+    },
+      "about2": {
+      "subtitle": "Was du bekommst, ist kein Standard-PC.",
+      "title": "",
+      "textArray": ["Ich baue deinen Rechner nicht einfach irgendwie zusammen – ich plane jedes Detail: Kühlung, Kabelmanagement, Aufrüstbarkeit, Lautstärke, Optik. Du bekommst ein System, das genau auf dich zugeschnitten ist – fixfertig, geprüft und bereit."]
+    },
+    "cta": {
+      "subtitle": "Kontaktieren Sie mich ganz ungegniert",
+      "title": "Lassen Sie uns über Ihr Vorhaben / Projekt reden.",
+      "link": "/formatiker_php/public/kontakt",
+      "linkText": "Kontakt"
+    },
+    "footer": {
+      "logo": "../assets/img/logo/logo-white-solid.svg",
+      "info": "Ich kann Ihnen ganz persönlich...",
+      "phoneLink": "+41763388953",
+      "phoneDisplay": "076 338 89 53",
+      "emailLink": "info@formatiker.com",
+      "emailDisplay": "info@formatiker.com",
+      "openingList": ["Mon – Sa 8:00 – 17:30","Sonntag – Geschlossen"]
+    }
   }
 }

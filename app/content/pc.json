@@ -1,47 +1,50 @@
 {
   "globalPageName": "Formatiker",
-  "header": {
-    "title": "PC-Montage",
-    "activePage": "pc"
-  },
-  "about": {
-    "subtitle": "INDIVIDUELLER PC-ZUSAMMENBAU",
-    "title": "Kein Fertig-PC. Ein Rechner, der zu dir passt.",
-    "textArray": ["Ich stelle dir genau den PC zusammen, den du brauchst – ob fürs Gaming, fürs Studio oder den Alltag. Leistung, Kühlung, Kabelmanagement, Optik – alles sitzt. Transparent. Aufgeräumt. Fixfertig geliefert."]
-  },
-  "listAndImage": {
-    "listAndImageList": [
-        ["Individuelle Beratung","Komponentenwahl exakt auf Einsatzzweck und Budget abgestimmt"],
-        ["Gaming-PCs","Maximale FPS, optimale Kühlung und stylishes Gehäuse"],
-        ["Workstations","Leistungsstarke Systeme für Video, 3D oder Musikproduktion"],
-        ["Leiser Betrieb","Silent-Builds mit hochwertigen Lüftern & Gehäusedämmung"],
-        ["Sauberes Kabelmanagement","Ordentliche Verkabelung für bessere Luftzirkulation & Wartung"],
-        ["Zukunftssicher","Upgrade-freundliche Systeme mit Erweiterungsspielraum"],
-        ["Schneller Aufbau"," Fertiger PC in kurzer Zeit bereit zur Nutzung"],
-        ["Software & Einrichtung","Windows, Treiber, BIOS – alles fix & ready"],
-        ["Transparente Kosten","Keine versteckten Aufpreise, faire Beratung"],
-        ["Optional mit Lieferung","Auf Wunsch fixfertig aufgebaut & direkt geliefert"]
-    ],
-    "listAndImageImages": ["image2","image3"]
-  },
-    "about2": {
-    "subtitle": "Was du bekommst, ist kein Standard-PC.",
-    "title": "",
-    "textArray":["Ich baue deinen Rechner nicht einfach irgendwie zusammen – ich plane jedes Detail: Kühlung, Kabelmanagement, Aufrüstbarkeit, Lautstärke, Optik. Du bekommst ein System, das genau auf dich zugeschnitten ist – fixfertig, geprüft und bereit."]
-  },
-  "cta": {
-    "subtitle": "Kontaktieren Sie mich ganz ungegniert",
-    "title": "Lassen Sie uns über Ihr Vorhaben / Projekt reden.",
-    "link": "/formatiker_php/public/kontakt",
-    "linkText": "Kontakt"
-  },
-  "footer": {
-    "logo": "../assets/img/logo/logo-white-solid.svg",
-    "info": "Ich kann Ihnen ganz persönlich...",
-    "phoneLink": "+41763388953",
-    "phoneDisplay": "076 338 89 53",
-    "emailLink": "info@formatiker.com",
-    "emailDisplay": "info@formatiker.com",
-    "openingList": ["Mon – Sa 8:00 – 17:30","Sonntag – Geschlossen"]
+  "Elements": {
+    "header": {
+      "title": "PC-Montage",
+      "activePage": "pc"
+    },
+    "placeHolder":{},
+    "about": {
+      "subtitle": "INDIVIDUELLER PC-ZUSAMMENBAU",
+      "title": "Kein Fertig-PC. Ein Rechner, der zu dir passt.",
+      "textArray": ["Ich stelle dir genau den PC zusammen, den du brauchst – ob fürs Gaming, fürs Studio oder den Alltag. Leistung, Kühlung, Kabelmanagement, Optik – alles sitzt. Transparent. Aufgeräumt. Fixfertig geliefert."]
+    },
+    "listAndImage": {
+      "list": [
+          ["Individuelle Beratung","Komponentenwahl exakt auf Einsatzzweck und Budget abgestimmt"],
+          ["Gaming-PCs","Maximale FPS, optimale Kühlung und stylishes Gehäuse"],
+          ["Workstations","Leistungsstarke Systeme für Video, 3D oder Musikproduktion"],
+          ["Leiser Betrieb","Silent-Builds mit hochwertigen Lüftern & Gehäusedämmung"],
+          ["Sauberes Kabelmanagement","Ordentliche Verkabelung für bessere Luftzirkulation & Wartung"],
+          ["Zukunftssicher","Upgrade-freundliche Systeme mit Erweiterungsspielraum"],
+          ["Schneller Aufbau"," Fertiger PC in kurzer Zeit bereit zur Nutzung"],
+          ["Software & Einrichtung","Windows, Treiber, BIOS – alles fix & ready"],
+          ["Transparente Kosten","Keine versteckten Aufpreise, faire Beratung"],
+          ["Optional mit Lieferung","Auf Wunsch fixfertig aufgebaut & direkt geliefert"]
+      ],
+      "images": ["image2","image3"]
+    },
+      "about2": {
+      "subtitle": "Was du bekommst, ist kein Standard-PC.",
+      "title": "",
+      "textArray":["Ich baue deinen Rechner nicht einfach irgendwie zusammen – ich plane jedes Detail: Kühlung, Kabelmanagement, Aufrüstbarkeit, Lautstärke, Optik. Du bekommst ein System, das genau auf dich zugeschnitten ist – fixfertig, geprüft und bereit."]
+    },
+    "cta": {
+      "subtitle": "Kontaktieren Sie mich ganz ungegniert",
+      "title": "Lassen Sie uns über Ihr Vorhaben / Projekt reden.",
+      "link": "/formatiker_php/public/kontakt",
+      "linkText": "Kontakt"
+    },
+    "footer": {
+      "logo": "../assets/img/logo/logo-white-solid.svg",
+      "info": "Ich kann Ihnen ganz persönlich...",
+      "phoneLink": "+41763388953",
+      "phoneDisplay": "076 338 89 53",
+      "emailLink": "info@formatiker.com",
+      "emailDisplay": "info@formatiker.com",
+      "openingList": ["Mon – Sa 8:00 – 17:30","Sonntag – Geschlossen"]
+    }
   }
 }

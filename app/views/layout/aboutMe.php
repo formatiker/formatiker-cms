@@ -8,7 +8,7 @@
             <div class="position-absolute" id="shape_5"></div>
             <div class="position-absolute" id="shape_6"></div>
             <div class="position-absolute" id="shape_7"></div>
-            <img class="position-relative z-index-1" id="ueber_mich" loading="lazy" src="../assets/img/<?=$picture?>.webp" alt="">
+            <img class="position-relative z-index-1" id="ueber_mich" loading="lazy" src="../assets/img/<?=$aboutMePicture?>.webp" alt="">
         </div>
     </div>
 </section>
