@@ -1,0 +1,30 @@
+.demoElement{
+    &__card{
+        overflow: hidden;
+        height: 400px;
+        @media #{map-get($breakpoints-max, sm)} {
+            height: 350px;
+        }
+        >img {
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, 0%) scale(1);
+            transition: transform 0.5s ease; // für sanftes Hover-Verhalten
+            will-change: transform;
+            z-index: 0;
+        }
+        &::after{
+            content: ' ';
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 0 0 20px rgba(255, 255, 255, 1);
+            z-index: 1;
+            border-radius: 15px;
+        }
+        &:hover {
+            >img {
+                transform: translate(-50%, 0%) scale(1.1);
+            }
+        }
+    } 
+}

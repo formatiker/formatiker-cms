@@ -1,0 +1,16 @@
+.logo{
+  display: flex;
+  flex: 1 1 0%;          // nimmt flexiblen Platz, darf schrumpfen
+  min-width: 0;          // verhindert, dass es sich gegen Shrinking sperrt
+  max-width: 270px;      // maximale Breite
+  overflow: hidden;
+  margin-right: 2rem;
+    &__img{
+        &--dynamic{
+          filter: var(--color-dynamic-logo);
+        }
+        width: 100%;          // Skaliert im Container
+        height: auto;
+        display: block;
+    }
+}

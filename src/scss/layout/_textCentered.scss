@@ -1,0 +1,17 @@
+.textCentered{
+    p{
+        font-size: 1.125rem;
+    }
+    h1{
+        font-size: 3.75rem;
+        @media #{map-get($breakpoints-max, md)} {
+            font-size: 3.25rem;
+        }
+        @media #{map-get($breakpoints-max, sm)} {
+            font-size: 3rem;
+        }
+        @media #{map-get($breakpoints-max, xs)} {
+            font-size: 2.5rem;
+        }
+    }
+}

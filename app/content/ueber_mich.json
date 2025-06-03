@@ -3,13 +3,15 @@
   "Elements":{
     "header": {
       "title": "Über mich",
-      "activePage": "ueber_mich"
+      "activePage": "ueber_mich",
+      "logoDark": "../assets/img/logo/logo-white-solid.svg",
+      "logoLight": "../assets/img/logo/logo-black.svg"
     },
     "placeHolder":{},
     "aboutMe": {
       "picture": "ueber_mich"
     },
-    "about": {
+    "textCentered": {
       "subtitle": "Über mich",
       "title": "Technik trifft Gestaltung.",
       "textArray": ["Ich bin ausgebildeter Applikationsentwickler (EFZ) aus Brugg. Trotz sehr guter Abschlussnoten (5.6 im Schnitt), fundierter Expertise und viel Know-how erhielt ich auf über 20 Bewerbungen ebenso viele Absagen.",
@@ -24,7 +26,7 @@
     },
     "footer": {
       "logo": "../assets/img/logo/logo-white-solid.svg",
-      "info": "Ich kann Ihnen ganz persönlich...",
+      "info": "Ich kann Ihnen ganz persönlich und mit offener Kommunikation bestimmt weiterhelfen.",
       "phoneLink": "+41763388953",
       "phoneDisplay": "076 338 89 53",
       "emailLink": "info@formatiker.com",

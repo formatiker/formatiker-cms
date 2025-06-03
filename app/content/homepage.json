@@ -3,7 +3,9 @@
   "Elements": {
     "header": {
       "title": "Startseite | Formatiker",
-      "activePage": "home"
+      "activePage": "home",
+      "logoDark": "../assets/img/logo/logo-white-solid.svg",
+      "logoLight": "../assets/img/logo/logo-black.svg"
     },
     "slider": {
       "headline": "Dein Technik-Profi aus Brugg",
@@ -34,7 +36,7 @@
         "img": "../assets/img/services/5/services-3.svg"
       }
     ],
-    "about": {
+    "textCentered": {
       "subtitle": "INFORMATIKER & DIGITALER HANDWERKER",
       "title": "Seit 20 Jahren mit Leidenschaft dabei.",
       "textArray": ["Schon als Jugendlicher habe ich PCs zusammengebaut und Webseiten programmiert – heute kombiniere ich Design und Code in einer Person. Effizient, individuell und technisch sauber."]
@@ -47,7 +49,7 @@
     },
     "footer": {
       "logo": "../assets/img/logo/logo-white-solid.svg",
-      "info": "Ich kann Ihnen ganz persönlich...",
+      "info": "Ich kann Ihnen ganz persönlich und mit offener Kommunikation bestimmt weiterhelfen.",
       "phoneLink": "+41763388953",
       "phoneDisplay": "076 338 89 53",
       "emailLink": "info@formatiker.com",

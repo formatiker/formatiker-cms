@@ -1,0 +1,24 @@
+.sliderSimple{
+    height: 550px;
+    @media #{map-get($breakpoints-max, lg)} {
+        height: 500px;
+    }
+    @media #{map-get($breakpoints-max, md)} {
+        height: 450px;
+    }
+    @media #{map-get($breakpoints-max, sm)} {
+        height: 400px;
+    }
+    @media #{map-get($breakpoints-max, xs)} {
+        height: 350px;
+    }
+  .carousel-inner {
+    overflow: hidden;
+    z-index: -1;
+    .carousel-item,
+    .carousel-item img {
+      height: 100%;
+      object-fit: cover; // oder contain je nach gewünschtem Verhalten
+    }
+  }
+}

@@ -1,20 +1,35 @@
-// Configuration
-//@forward "../../node_modules/bootstrap/scss/bootstrap";
+// Theme Variables
+@import "theme.scss";
 
-@forward 'bootstrapparts';
-@forward 'components/theme';
-@forward 'components/spacing';
-@forward 'components/buttons';
-@forward 'components/offcanvas';
-@forward 'layout/header';
-@forward 'layout/menu';
-@forward 'layout/meanmenu';
-@forward 'layout/slider';
-@forward 'layout/about';
-@forward 'layout/services';
-@forward 'layout/cta';
-@forward 'layout/contact';
-@forward 'layout/footer';
-@forward 'layout/logo';
-@forward 'layout/demo';
 
+// Change Bootstrap Variables
+@import "../../node_modules/bootstrap/scss/functions";
+@import "variables";
+
+// Load Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Globals
+@import "globals";
+
+// Own Styles
+@import "utilities/keyframes"; // ⬅️ HIER EINFÜGEN
+
+//layout
+@import "layout/header";
+@import "layout/slider";
+@import "layout/sliderSimple";
+@import "layout/services";
+@import "layout/textCentered";
+@import "layout/aboutMe";
+@import "layout/cta";
+@import "layout/singleImage";
+@import "layout/listAndImage";
+@import "layout/placeHolder";
+@import "layout/demoElement";
+@import "layout/contactForm";
+@import "layout/footer";
+
+//components
+@import "components/logo";
+@import "components/buttons";

@@ -2,12 +2,12 @@
   "name": "formatiker-clean",
   "version": "1.0.0",
   "scripts": {
-    "dev": "sass --watch src/scss/main.scss dist/style.css",
-    "build": "sass src/scss/main.scss dist/style.min.css --style=compressed"
+    "dev": "sass --watch src/scss/main.scss assets/style.css --style=expanded",
+    "build": "sass src/scss/main.scss assets/style.min.css --style=expanded"
   },
   "devDependencies": {
     "axios": "1.7.9",
-    "bootstrap": "5.3.3",
+    "bootstrap": "^5.3.6",
     "sass": "1.77.6",
     "swiper": "9.4.1"
   },

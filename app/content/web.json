@@ -1,17 +1,21 @@
 {
   "globalPageName": "Formatiker",
   "Elements":{
-  "header": {
+    "header": {
       "title": "Web-Entwicklung",
-      "activePage": "web"
+      "activePage": "web",
+      "logoDark": "../assets/img/logo/logo-white-solid.svg",
+      "logoLight": "../assets/img/logo/logo-black.svg"
     },
-    "placeHolder":{},
-    "about": {
-      "subtitle": "INDIVIDUELLER PC-ZUSAMMENBAU",
-      "title": "Kein Fertig-PC. Ein Rechner, der zu dir passt.",
-      "textArray": ["Ich stelle dir genau den PC zusammen, den du brauchst – ob fürs Gaming, fürs Studio oder den Alltag. Leistung, Kühlung, Kabelmanagement, Optik – alles sitzt. Transparent. Aufgeräumt. Fixfertig geliefert."]
+    "sliderSimple":{
+      "images": ["image2", "image3"]
     },
-    "demo": {
+    "textCentered": {
+      "subtitle": "WEBDESIGN & ENTWICKLUNG AUS EINER HAND",
+      "title": "Weniger Abstimmung. Mehr Ergebnis.",
+      "textArray": ["Ich gestalte und entwickle Webseiten komplett selbst – ohne Agenturumwege, ohne Reibungsverluste. Das spart Zeit, Nerven und bringt genau das, was du brauchst: eine saubere, schnelle, moderne Website."]
+    },
+    "demoElement": {
       "list": [
           {
           "title": "Praxis / Therapie",
@@ -39,10 +43,10 @@
           }
       ]
     },
-      "about2": {
-      "subtitle": "Was du bekommst, ist kein Standard-PC.",
+    "textCentered2": {
+      "subtitle": "Was ich liefere, passt von Anfang bis Ende.",
       "title": "",
-      "textArray": ["Ich baue deinen Rechner nicht einfach irgendwie zusammen – ich plane jedes Detail: Kühlung, Kabelmanagement, Aufrüstbarkeit, Lautstärke, Optik. Du bekommst ein System, das genau auf dich zugeschnitten ist – fixfertig, geprüft und bereit."]
+      "textArray": ["Du brauchst keine Designer-Entwürfe, die der Entwickler dann doch anders umsetzt. Kein Hin und Her – ich denke Design und Funktion gleichzeitig mit. So entsteht eine Website, die nicht nur gut aussieht, sondern sich auch gut anfühlt."]
     },
     "cta": {
       "subtitle": "Kontaktieren Sie mich ganz ungegniert",
@@ -52,7 +56,7 @@
     },
     "footer": {
       "logo": "../assets/img/logo/logo-white-solid.svg",
-      "info": "Ich kann Ihnen ganz persönlich...",
+      "info": "Ich kann Ihnen ganz persönlich und mit offener Kommunikation bestimmt weiterhelfen.",
       "phoneLink": "+41763388953",
       "phoneDisplay": "076 338 89 53",
       "emailLink": "info@formatiker.com",
